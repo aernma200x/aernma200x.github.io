@@ -412,10 +412,7 @@ body.dark-theme{
   .profile__info{
     column-gap: 1.5rem;
   }
-  .profile__button{
-    flex-direction: column;
-    row-gap: 1rem;
-  }
+  
   .skills__box{
     column-gap: 5rem;
   }
