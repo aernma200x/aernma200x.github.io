@@ -112,9 +112,6 @@ body.dark-theme{
   background-color: hsl(var(--hue), 24%, 16%);
 }
 
-.dark-theme .filters__content{
-  background-color: var(--container-color);
-}
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -262,8 +259,8 @@ body.dark-theme{
 }
 /*=============== FILTERS TABS ===============*/
 .filters__content{
-  margin: 2rem 0 2.5rem;
-  background-color: var(--text-color-lighten);
+  margin: 0.75rem auto;
+  
   padding: .375rem;
   border-radius: .75rem;
   display: flex;
@@ -399,7 +396,7 @@ body.dark-theme{
   margin: 2.5rem 0 2rem;
   text-align: center;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -407,7 +404,7 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
   .container{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -422,27 +419,33 @@ body.dark-theme{
   .skills__box{
     column-gap: 5rem;
   }
+  .project__content{
+    grid-template-columns: 300px;
+    justify-content: center;
+
+
+  }
 }
 
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 720px) {
   .project__content{
-    grid-template-columns: 332px;
+    grid-template-columns: repeat(2, 300px);
     justify-content: center;
 
   }
   .filters__content{
     width: 332px;
-    margin: 3rem auto;
+    margin: 0.75rem auto;
   }
   
 }
 
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 1080px) {
   .project__content,
   .skills__content{
-    grid-template-columns: repeat(2, 332px);
+    grid-template-columns: repeat(3, 300px);
   }
   
   .skills__content{
@@ -498,7 +501,7 @@ body.dark-theme{
   }
 
   .project__content{
-    gap: 2rem 3rem;
+    gap: 2rem 2rem;
   }
 
   .project__modal{
