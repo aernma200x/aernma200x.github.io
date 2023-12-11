@@ -12,9 +12,9 @@
       Teal: hsl(174, 63%, 62%)
   */
 
-  --hue: 207;
-  --sat: 90%;
-  --lig: 61%;
+  --hue: 218;
+  --sat: 44%;
+  --lig: 35.7%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -142,8 +142,8 @@ body.dark-theme{
 }
 
 .profile__perfil{
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: var(--first-color);
   border-radius: 50%;
   overflow: hidden;
@@ -153,11 +153,11 @@ body.dark-theme{
 }
 
 .profile__perfil img{
-  width: 75px;
+  width: 100%;
 }
 
 .profile__border{
-  border: 3.5px solid var(--first-color);
+  border: 4px solid var(--first-color);
   justify-self: center;
   width: 115px;
   height: 115px;
@@ -473,12 +473,12 @@ body.dark-theme{
   }
 
   .profile__perfil{
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
   }
 
   .profile__perfil img{
-    width: 90px;
+    width: 100%;
   }
 
   .profile__profession{
